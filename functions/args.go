@@ -19,7 +19,7 @@ func ArgsChecker(args []string) (string, string) {
 	} else {
 		banner = "standard.txt"
 	}
-	if banner != "standard.txt" && banner != "shadow.txt" && banner != "thinkertoy.txt" {
+	if banner != "standard.txt" && banner != "shadow.txt" && banner != "thinkertoy.txt" && banner != "enigma.txt" {
 		log.Fatalln("invalid banner")
 	}
 	return toWrite, banner

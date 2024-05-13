@@ -39,7 +39,7 @@ func mainCopy(toWrite string, banner string) string {
 
 func TestMain(t *testing.T) {
 	tests := []string{"0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "/(\")", "hello1\\nworld"}
-	banners := []string{"standard", "shadow", "thinkertoy"}
+	banners := []string{"standard", "shadow", "thinkertoy", "enigma"}
 	fileName := "test_files/want%d%s.txt"
 	var want string
 	for i := 0; i < len(tests); i++ {
@@ -50,7 +50,6 @@ func TestMain(t *testing.T) {
 				t.Errorf("Test case %d failed. Expected: %q", i+1, fmt.Sprintf(fileName, i+1, banner))
 			}
 		}
-
 	}
 }
 
