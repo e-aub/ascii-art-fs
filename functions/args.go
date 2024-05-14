@@ -8,7 +8,7 @@ import (
 func ArgsChecker(args []string) (string, string) {
 	var banner string
 	if len(args) < 2 || len(args) > 3 {
-		log.Fatal("Invalid arguments, Usage: go run . [STRING] [BANNER]")
+		log.Fatal("\nUsage: go run . [STRING] [BANNER]\n\nEX: go run . something standard")
 	}
 	toWrite := args[1]
 	if len(args) == 3 {
